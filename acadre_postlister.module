@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Acadre Postlister feature.
+ */
+
+include_once 'acadre_postlister.features.inc';

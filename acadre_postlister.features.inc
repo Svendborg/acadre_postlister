@@ -29,6 +29,14 @@ function acadre_postlister_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'postliste_import' => array(
+      'name' => t('Postliste Import'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
   );
   return $items;
 }

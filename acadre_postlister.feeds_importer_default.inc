@@ -32,7 +32,7 @@ function acadre_postlister_feeds_importer_default() {
       'plugin_key' => 'FeedsExcelParser',
       'config' => array(
         'no_headers' => 0,
-        'all_worksheets' => 1,
+        'all_worksheets' => 0,
       ),
     ),
     'processor' => array(
@@ -44,27 +44,27 @@ function acadre_postlister_feeds_importer_default() {
         'mappings' => array(
           0 => array(
             'source' => 'Journaldato',
-            'target' => 'field_journato',
+            'target' => 'field_s2web_postlist_journda_uni:start',
             'unique' => FALSE,
           ),
           1 => array(
             'source' => 'Dokumentdato',
-            'target' => 'field_os2web_postlist_docdate:start',
+            'target' => 'field_s2web_postlist_docdate_uni:start',
             'unique' => FALSE,
           ),
           2 => array(
-            'source' => 'Dokumenttitel',
-            'target' => 'title',
-            'unique' => FALSE,
-          ),
-          3 => array(
             'source' => 'Afsender/modtager',
             'target' => 'field_os2web_postlist_afs_id',
             'unique' => FALSE,
           ),
-          4 => array(
+          3 => array(
             'source' => 'Afs/modt navn',
             'target' => 'field_os2web_postlist_afs_name',
+            'unique' => FALSE,
+          ),
+          4 => array(
+            'source' => 'Dokumenttitel',
+            'target' => 'title',
             'unique' => FALSE,
           ),
           5 => array(
@@ -79,7 +79,7 @@ function acadre_postlister_feeds_importer_default() {
             'unique' => FALSE,
           ),
         ),
-        'update_existing' => '1',
+        'update_existing' => '0',
         'input_format' => 'plain_text',
         'skip_hash_check' => 0,
         'bundle' => 'os2web_acadre_postlists',
@@ -87,7 +87,7 @@ function acadre_postlister_feeds_importer_default() {
     ),
     'content_type' => 'postliste_import',
     'update' => 0,
-    'import_period' => '1800',
+    'import_period' => '-1',
     'expire_period' => 3600,
     'import_on_create' => 1,
     'process_in_background' => 0,

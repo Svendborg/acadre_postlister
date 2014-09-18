@@ -4,14 +4,14 @@
  * Code for the Acadre Postlister feature.
  */
 
-include_once 'acadre_postlister.features.inc';
+include_once 'os2web_postlister.features.inc';
 
 /**
- * acadre_postlister_feeds_after_parse
+ * os2web_postlister_feeds_after_parse
  * @return void
  * @author Henrik Farre <hf@bellcom.dk>
  **/
-function acadre_postlister_feeds_after_parse(FeedsSource $source, FeedsParserResult $result)
+function os2web_postlister_feeds_after_parse(FeedsSource $source, FeedsParserResult $result)
 {
   $fieldsToConvert = array(
     'journaldato',

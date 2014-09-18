@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * acadre_postlister.features.inc
+ * os2web_postlister.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function acadre_postlister_ctools_plugin_api($module = NULL, $api = NULL) {
+function os2web_postlister_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "feeds" && $api == "feeds_importer_default") {
     return array("version" => "1");
   }
@@ -19,14 +19,14 @@ function acadre_postlister_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_node_info().
  */
-function acadre_postlister_node_info() {
+function os2web_postlister_node_info() {
   $items = array(
     'os2web_acadre_postlists' => array(
       'name' => t('Postlister'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
     'postliste_import' => array(
@@ -34,7 +34,7 @@ function acadre_postlister_node_info() {
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
   );

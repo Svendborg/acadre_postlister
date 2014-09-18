@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * acadre_postlister.features.field_base.inc
+ * os2web_postlister.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function acadre_postlister_field_default_field_bases() {
+function os2web_postlister_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'field_os2web_postlist_afs_id'

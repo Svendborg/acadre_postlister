@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * acadre_postlister.strongarm.inc
+ * os2web_postlister.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function acadre_postlister_strongarm() {
+function os2web_postlister_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
